@@ -1,0 +1,203 @@
+body {
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Earth Orbiter Bold", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.infoContainer {
+  z-index: 2;
+  display: none;
+  height: 100vh;
+  align-items: center;
+  margin-top: 2vh;
+  flex-direction: column;
+  animation: zoomImage 7s forwards;
+  animation-play-state: paused;
+}
+
+.infoContainer h1 {
+  font-size: 4vh;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+img {
+  width: 60vw;
+  height: 40vh;
+  margin: 2%;
+  cursor: pointer;
+}
+
+.imageInfo {
+  display: flex;
+  width: 95%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.imageInfo p {
+  text-align: center;
+  font-family: "Orbitron", sans-serif;
+  line-height: 1.5;
+  font-size: 2vh;
+}
+
+.inputContainer {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.inputContainer input {
+  width: 50%;
+  height: 10vh;
+  font-size: 2.5vh;
+  border: none;
+  border-radius: 5px;
+  padding: 0 5%;
+  outline: none;
+  text-align: center;
+  font-family: "Earth Orbiter Bold", sans-serif;
+  color-scheme: dark;
+  background-color: transparent;
+  letter-spacing: 0.2em;
+}
+
+button {
+  background-color: transparent;
+  font-family: "Earth Orbiter Bold", sans-serif;
+  font-size: 1.5vh;
+  color: #fff;
+  letter-spacing: 0.5em;
+  border: 1px solid #fff;
+}
+
+button:hover {
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+}
+
+@keyframes zoomImage {
+  0% {
+    transform: scale(0.001);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.backgroundStars {
+  z-index: 1;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  height: 1px;
+  width: 1px;
+  background-color: #fff;
+  border-radius: 90%;
+  box-shadow: -40vw 5vh 0px 0px #fff, 21vw 30vh 1px 3px #fff,
+    28vw 1vh 3px 1px #fff, 37vw -4vh 0px 3px #fff, 31vw -41vh 0px 2px #fff,
+    -41vw -40vh 0px 0px #fff, 24vw -35vh 1px 2px #fff, 27vw 30vh 0px 0px #fff,
+    3vw 40vh 0px 1px #fff, 43vw -48vh 0px 3px #fff, 38vw 2vh 2px 3px #fff,
+    -33vw -30vh 2px 0px #fff, 49vw 45vh 0px 0px #fff, -32vw -2vh 2px 3px #fff,
+    7vw -10vh 3px 1px #fff, -15vw -23vh 3px 1px #fff, -45vw -46vh 0px 2px #fff,
+    -10vw 22vh 0px 0px #fff, -47vw 1vh 2px 2px #fff, 46vw 26vh 3px 0px #fff,
+    -17vw -5vh 0px 1px #fff, 17vw -21vh 1px 1px #fff, -26vw 12vh 1px 1px #fff,
+    -17vw 38vh 3px 3px #fff, -21vw 50vh 0px 2px #fff, -3vw -36vh 1px 2px #fff,
+    -37vw -38vh 3px 3px #fff, -23vw 0vh 0px 3px #fff, 38vw -18vh 3px 0px #fff,
+    -7vw -39vh 0px 1px #fff, 12vw -24vh 3px 0px #fff, -47vw -37vh 0px 2px #fff,
+    37vw -37vh 3px 2px #fff, 41vw -34vh 0px 3px #fff, 18vw 50vh 3px 3px #fff,
+    -36vw -9vh 3px 0px #fff, -2vw -20vh 1px 2px #fff, -36vw 27vh 0px 3px #fff,
+    -45vw 39vh 1px 0px #fff, 34vw 17vh 1px 2px #fff, 0vw -20vh 1px 0px #fff,
+    8vw -9vh 0px 0px #fff, 49vw 24vh 0px 0px #fff, -12vw 9vh 1px 2px #fff,
+    -19vw 15vh 2px 2px #fff, 32vw -19vh 0px 0px #fff, 41vw -40vh 0px 2px #fff,
+    -28vw -23vh 0px 3px #fff, 32vw 48vh 3px 2px #fff, 49vw 0vh 2px 3px #fff,
+    23vw 12vh 2px 1px #fff, 24vw 9vh 0px 3px #fff, -36vw 7vh 0px 0px #fff,
+    3vw 17vh 0px 1px #fff, 17vw 25vh 0px 3px #fff, -35vw -6vh 1px 0px #fff,
+    6vw -26vh 1px 0px #fff, 20vw -28vh 0px 3px #fff, 4vw 41vh 3px 3px #fff,
+    16vw 8vh 1px 1px #fff, -10vw 25vh 2px 1px #fff, 39vw 42vh 1px 0px #fff,
+    36vw -8vh 1px 3px #fff, -16vw 15vh 0px 3px #fff, -34vw 39vh 1px 0px #fff,
+    25vw -20vh 1px 2px #fff, 7vw 9vh 1px 0px #fff, 45vw 35vh 2px 1px #fff,
+    -33vw -49vh 2px 3px #fff, -8vw -31vh 3px 3px #fff, 41vw 8vh 3px 0px #fff,
+    -28vw 11vh 2px 2px #fff, 36vw -43vh 0px 1px #fff, -10vw 26vh 2px 2px #fff,
+    -30vw 19vh 3px 2px #fff, -25vw -37vh 3px 0px #fff, 49vw -37vh 1px 2px #fff,
+    32vw 3vh 3px 2px #fff, 40vw 37vh 1px 1px #fff, -49vw -40vh 2px 1px #fff,
+    -12vw 47vh 2px 2px #fff, -50vw 21vh 2px 3px #fff, 12vw -37vh 0px 0px #fff,
+    -3vw 15vh 3px 2px #fff, -36vw -44vh 0px 3px #fff, 39vw 50vh 0px 1px #fff,
+    -24vw -18vh 3px 0px #fff, 39vw -34vh 3px 2px #fff, 18vw 25vh 3px 3px #fff,
+    -9vw 42vh 0px 2px #fff, 44vw -29vh 2px 1px #fff, -42vw -46vh 1px 0px #fff,
+    0vw 13vh 2px 1px #fff, 11vw 45vh 2px 0px #fff, -38vw 41vh 1px 0px #fff,
+    -42vw -12vh 3px 1px #fff, -29vw 50vh 0px 3px #fff, -14vw -24vh 3px 1px #fff,
+    -2vw 45vh 2px 1px #fff, -11vw 9vh 0px 0px #fff;
+  animation: zoom 5s forwards;
+  animation-play-state: paused;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(3);
+  }
+}
+
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+  align-items: center;
+  justify-content: center;
+}
+
+.lightbox img {
+  height: 90vh;
+  width: 90vw;
+  margin: auto;
+  display: block;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 600px) {
+  .lightbox img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    max-height: none;
+  }
+  .inputContainer {
+    flex-direction: column;
+  }
+  .inputContainer input {
+    width: 100%;
+    margin: 0;
+  }
+  .inputContainer button {
+    width: 100%;
+    padding: 2vh;
+  }
+  .infoContainer {
+    flex-direction: column;
+    justify-content: left;
+  }
+  .imageInfo {
+    flex-direction: column;
+    margin-top: 100px;
+  }
+}

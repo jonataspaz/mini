@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.cdnfonts.com/css/earth-orbiter"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/x-icon" href="/saturn.png" />
+    <title>What happened above?</title>
+  </head>
+  <body>
+    <div class="infoContainer">
+      <h1></h1>
+      <h2></h2>
+      <div class="imageInfo">
+        <img class="imageLowRes" />
+        <div class="lightbox" id="lightbox" onclick="hideLightbox()">
+          <img id="lightboxImage" src="" alt="" />
+        </div>
+        <p></p>
+      </div>
+      <button id="reset">back</button>
+    </div>
+
+    <div class="inputContainer">
+      <input type="date" id="inputDate" min="1995-06-16" max="2050-01-01" />
+      <button id="inputButton">What happened above?</button>
+    </div>
+    <div class="backgroundStars"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
