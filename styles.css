@@ -186,6 +186,7 @@ button:hover {
   }
   .inputContainer input {
     width: 100%;
+    display: inline-flex;
     margin: 0;
   }
   .inputContainer button {
@@ -199,8 +200,5 @@ button:hover {
   .imageInfo {
     flex-direction: column;
     margin-top: 100px;
-  }
-  input[type="date"] {
-    display: inline-flex;
   }
 }
