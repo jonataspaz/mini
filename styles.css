@@ -186,7 +186,6 @@ button:hover {
   }
   .inputContainer input {
     width: 100%;
-    display: inline-flex;
     margin: 0;
   }
   .inputContainer button {

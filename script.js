@@ -12,7 +12,6 @@ resetButton.addEventListener("click", resetDOM);
 // Function to fetch data from the NASA API based on the user's input date
 function fetchData() {
   const dateInput = document.querySelector("#inputDate");
-  console.log(dateInput);
   const selectedDate = dateInput.value;
 
   if (!isValidDate(selectedDate)) {
